@@ -31,4 +31,5 @@ jobs:
       - name: Build dockerfile (with push)
         run: |
           docker buildx build \
-          --platform linux/amd64,linux/arm/v7,linux/arm64 --push . 
+          --platform linux/amd64,linux/arm/v7,linux/arm64 \
+          --push --tag latest . 
