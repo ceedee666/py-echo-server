@@ -10,7 +10,7 @@ async def root(request: Request):
     return {
             "client": request.client.host,
             "host": socket.gethostname(),
-            "message": "Hello World!"
+            "message": "Hello World"
             }
 
 if __name__ == "__main__":
